@@ -1,6 +1,6 @@
 import request from 'superagent';
 
-const URL = 'https://agile-sierra-92641.herokuapp.com/'
+const URL = 'https://agile-sierra-92641.herokuapp.com'
 
 export async function signup(email, password) {
     const data = await request
@@ -34,7 +34,8 @@ export async function addTodo(todo, token) {
     const data = await request
     .post(`${URL}/api/todos`)
     .send({
-        todo: todo
+        todo: todo,
+        completed: false
     })
     .set('Authorization', token)
 
