@@ -1,38 +1,109 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: gainsboro;
+}
+.body {
+  background-color: gainsboro;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.is-completed {
+  text-decoration: line-through;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.not-completed{
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.not-completed:hover{
+  background-color: plum;
+  transform: translateY(4px);
+}
+
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: azure;
+  border: solid 0.5rem gray;
+  margin-bottom: 10%;
+}
+
+.img-div {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: solid gray 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 4rem;
 }
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.link:hover{
+  background-color: plum;
+  transform: translateY(4px);
+  border: solid blue 0.1rem;
+  border-radius: 25px;
+}
+
+button {
+  margin: 1%;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: outset black 0.5rem;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.todo-list {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color:cornsilk;
+  border:solid grey 1rem;
+  border-radius: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  margin: 5%;
+}
+
+input {
+  font-size: 2rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+input:hover {
+  background-color: lightcyan;
+}
+
