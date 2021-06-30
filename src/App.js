@@ -36,12 +36,13 @@ export default class App extends Component {
   render() {
     return(
       <Router>
-        <div>
-          <div>
-            <Link to="/">Home</Link>
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign Up</Link>
-            <Link to="/todos">Todos</Link>
+        <div className="body">
+          <div className="header">
+            <h1>Task Munger</h1>
+            <span className="link"><Link to="/">Home</Link></span>
+            <span className="link"><Link to="/login">Login</Link></span>
+            <span className="link"><Link to="/signup">Sign Up</Link></span>
+            <span className="link"><Link to="/todos">Todos</Link></span>
             <button onClick={this.logout}>Logout</button>
           </div>
           <Switch>

@@ -38,7 +38,7 @@ export default class Todos extends Component {
                     </label>
                     <button>Add Task</button>
                 </form>
-                <div>
+                <div className="todo-list">
                     {
                         this.state.todos.map(todo =>
                             <p

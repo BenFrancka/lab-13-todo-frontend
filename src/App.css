@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: gainsboro;
+}
+.body {
+  background-color: gainsboro;
+}
 
 .is-completed {
   text-decoration: line-through;
@@ -15,3 +21,77 @@
   background-color: plum;
   transform: translateY(4px);
 }
+
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: azure;
+  border: solid 0.5rem gray;
+  margin-bottom: 10%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.link:hover{
+  background-color: plum;
+  transform: translateY(4px);
+  border: solid blue 0.1rem;
+  border-radius: 25px;
+}
+
+button {
+  margin: 1%;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: outset black 0.5rem;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.todo-list {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color:cornsilk;
+  border:solid grey 1rem;
+  border-radius: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  margin: 5%;
+}
+
+input {
+  font-size: 2rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+input:hover {
+  background-color: lightcyan;
+}
+
