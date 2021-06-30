@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-is-completed {
+.is-completed {
   text-decoration: line-through;
 }
 
@@ -11,6 +11,7 @@ is-completed {
   transition: all .2s ease-in-out;
 }
 
-not-completed:hover{
-  
+.not-completed:hover{
+  background-color: plum;
+  transform: translateY(4px);
 }
