@@ -5,7 +5,6 @@ import {
   Switch,
   Route,
   Link,
-  useParams,
   Redirect
 } from 'react-router-dom';
 
